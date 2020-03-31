@@ -1,0 +1,52 @@
+//practical 2
+
+#include<iostream>// using the in, output library
+#include<iomanip>//library for setprecision
+
+using namespace std;// this is the namespace not to be using std:: in front of each cout cin and endl..
+
+int main()
+{
+	cout << "\tTask 1:\n";
+	int n = 0;//integer variable n=0
+	n += 32;//assign 32 to n
+	cout << "\t" << n << endl;//print out the last value of n
+	cout << "\tEnd of Task 1\n\n\n";
+
+
+	cout << "\tTask 2:\n";//task 2 begins
+	int a = 0, b = 0, c = 0;//a=b=c=intial value 0
+	cout << "Please enter three different numbers:" << endl;
+	cin >> a >> b >> c;//user numbers input
+	int sum = a + b + c;//the sum of those 3 numbers will be shown into sum
+	cout << "The sum of your 3 numbers is: " << sum << endl;
+	cout << "\tend of Task 2\n\n\n" << endl;//the end of task 2
+
+	cout << "\tTask 3\n";
+	double d;
+	double s;
+	cout << "Please enter 2 decimal numbers:\n" << "be noticed that when we are going to process the operation it will not show you more 2 decimal places, Thank you." << endl;
+	cin >> d >> s;//the user will enter two decimal numbers.
+	double add = d + s;
+
+	cout << setprecision(2) << add << endl;//setprecision(2) to display only 2 decimal places
+	cout << "\tEnd of task 3\n\n\n" << endl;
+
+
+	cout << "\tTask 4:" << endl;
+	char t, h;//it is only one character in each one, so it does not need more than char
+	cout << "Hi Dear, could you please enter the first initial 2 letters of your name:" << endl;
+	cout << "First name initial:";
+	cin >> t;//first initial letter of the user first name
+	cout << "\nLast name initial:";
+	cin >> h;//first initial letter of the user last name
+	cout << "Hello, " << t << '.' << h << ".!" << "\nThanks for your cooperation ...." << endl;
+	cout << "\t\n End of task 4\n\n\n";
+
+
+
+
+
+	system("pause");
+	return 0;//return the value
+}
